@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app 
+  xmlns:ti="http://ti.appcelerator.org">
+  <id>com.kasyrani.offpac</id>
+  <name>OffPAC</name>
+  <version>2.6.1</version>
+  <publisher>Perpustakaan Tuanku Bainun</publisher>
+  <url>http://pustaka.upsi.edu.my</url>
+  <description>OffPAC - New way of searching for materials.</description>
+  <copyright>Perpustakaan Tuanku Bainun 2019</copyright>
+  <icon>DefaultIcon.png</icon>
+  <fullscreen>false</fullscreen>
+  <navbar-hidden>false</navbar-hidden>
+  <analytics>false</analytics>
+  <guid>6253dcae-c911-417b-9444-290610e4be0d</guid>
+  <property name="ti.ui.defaultunit" type="string">dp</property>
+  <ios>
+    <plist>
+      <dict>
+        <key>UISupportedInterfaceOrientations~iphone</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+        </array>
+        <key>UISupportedInterfaceOrientations~ipad</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+          <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        </array>
+        <key>UIRequiresPersistentWiFi</key>
+        <false/>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+        <key>UIViewControllerBasedStatusBarAppearance</key>
+        <false/>
+        <key>UIStatusBarHidden</key>
+        <false/>
+        <key>UIStatusBarStyle</key>
+        <string>UIStatusBarStyleDefault</string>
+        <key>NSCameraUsageDescription</key>
+        <string>OffPAC need to use your camera for scanning ISBN barcode</string>
+      </dict>
+    </plist>
+  </ios>
+  <modules>
+    <module platform="iphone" version="2.1.0">dk.napp.drawer</module>
+    <module platform="iphone" version="5.1.1">com.mirasense.scanditsdk</module>
+    <module platform="iphone">ti.safaridialog</module>
+  </modules>
+  <deployment-targets>
+    <target device="android">false</target>
+    <target device="ipad">true</target>
+    <target device="iphone">true</target>
+  </deployment-targets>
+  <sdk-version>8.0.0.GA</sdk-version>
+  <property name="appc-app-id" type="string">5c5ced51e9abda1b943ebffd</property>
+  <plugins/>
+</ti:app>
